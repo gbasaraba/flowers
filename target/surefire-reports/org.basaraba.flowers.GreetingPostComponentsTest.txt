@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: org.basaraba.flowers.GreetingPostComponentsTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.596 s <<< FAILURE! - in org.basaraba.flowers.GreetingPostComponentsTest
+testHello(org.basaraba.flowers.GreetingPostComponentsTest)  Time elapsed: 0.575 s  <<< FAILURE!
+java.lang.AssertionError: 
+Status expected:<200> but was:<404>
+
+> GET /hello
+> WebTestClient-Request-Id: [1]
+> Accept: [text/plain]
+
+No content
+
+< 404 Not Found
+< Content-Type: [application/json;charset=UTF-8]
+
+Content not available yet
+
+	at org.basaraba.flowers.GreetingPostComponentsTest.testHello(GreetingPostComponentsTest.java:34)
+Caused by: java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.basaraba.flowers.GreetingPostComponentsTest.testHello(GreetingPostComponentsTest.java:34)
+

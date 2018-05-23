@@ -1,0 +1,25 @@
+#spring:
+#  profiles.active: default
+---
+spring:
+    profiles: default
+servers:
+  local:
+    hostName: localhost
+    port: 8080
+    baseUri: /posts
+  remote:
+    postRepositoryEndpoint: https://jsonplaceholder.typicode.com/
+
+logging:
+    level:
+        org.gbasaraba: WARN
+#       org.springframework: DEBUG
+        io.netty: ERROR
+        ROOT: INFO
+    file: /tmp/logs/flowers.log
+    pattern:
+        console: "%d %-5level [%thread] %logger : %msg%n"
+        file: "%d %-5level [%thread] %logger : %msg%n"
+
+---
